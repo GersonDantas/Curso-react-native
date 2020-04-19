@@ -1,7 +1,6 @@
 import React from 'react'
 import {Text} from 'react-native'
 import Padrao from '../estilo/Padrao'
-import Menu from '../menu';
 
 const Inverter = props => {
 	const inv = props.texto.split('').reverse().join('');
