@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const font = {style: {fontSize: 40}};
+const font = { style: { fontSize: 40 } };
 
-function sobrenomeFilhos(props){
-    return React.Children.map(props.children, 
-        c => React.cloneElement(c,{...props, ...c.props})) 
+function sobrenomeFilhos(props) {
+    return React.Children.map(props.children,
+        c => React.cloneElement(c, { ...props, ...c.props }))
 }
 
 export const Filho = props =>
